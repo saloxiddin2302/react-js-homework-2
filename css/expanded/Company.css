@@ -1,0 +1,39 @@
+.new-title {
+  padding-top: 70px;
+}
+.new-title h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.new-title h1 span {
+  color: #ef7c00 !important;
+}
+
+.new-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0px 150px;
+}
+@media (max-width: 900px) {
+  .new-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.new-card-left {
+  max-width: 552px;
+  width: 100%;
+}
+
+.new-card-right {
+  max-width: 552px;
+}
+.new-card-right p {
+  font-size: 20px;
+}

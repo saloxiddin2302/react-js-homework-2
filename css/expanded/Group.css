@@ -1,0 +1,35 @@
+.group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.group .gr-cards {
+  max-width: 203px;
+  text-align: center;
+}
+.group .gr-cards img {
+  border-radius: 50%;
+}
+
+.grbtn {
+  display: block;
+  margin: 40px auto;
+  padding: 10px;
+  border-color: #ef7c00;
+  color: #ef7c00;
+  border-radius: 7px;
+  transition: 0.4s;
+}
+.grbtn:hover {
+  color: white;
+  background-color: #ef7c00;
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  .group {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}

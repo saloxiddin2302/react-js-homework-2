@@ -1,0 +1,121 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  transition: height 0.3s ease;
+  z-index: 99;
+}
+.navbar.shrink {
+  height: 60px;
+}
+.navbar.open .menu-items {
+  display: flex;
+  flex-direction: column;
+}
+.navbar a:hover {
+  color: #ef7c00 !important;
+}
+.navbar .dropdown {
+  position: relative;
+}
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+.navbar .dropdown .dropdown-content a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+}
+.navbar .navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1174px;
+  margin: 0 auto;
+}
+.navbar .menu-icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+  }
+  .navbar .menu-icon .menu-icon-bar {
+    height: 2px;
+    width: 20px;
+    background-color: #000000;
+    margin-bottom: 4px;
+  }
+}
+.navbar .menu-items {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .navbar .menu-items {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+.navbar .menu-items a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .navbar .menu-items a {
+    margin: 10px 0;
+  }
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.sun {
+  padding: 3px;
+  background: rgba(178, 178, 178, 0.6862745098);
+  color: yellow;
+  border-radius: 5px;
+}
+
+.moon {
+  padding: 2px 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.dark-mode-button {
+  border: none;
+}

@@ -1,0 +1,42 @@
+.register {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  height: 376px;
+  background-image: url(../../assets/images/info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.register .regbtn {
+  max-width: 200px;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #EF7C00;
+  transition: 0.4s;
+}
+.register .regbtn:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+.register p {
+  padding: 10px 0;
+}
+.register input {
+  margin-right: 10px;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 0px 4px 4px 0px;
+  border: 1px solid var(--borders-color-border, rgba(0, 16, 61, 0.12));
+  background: var(--main-color-bg, #fff);
+}
+.register textarea {
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+  max-width: 446px;
+  width: 100%;
+  height: 80px;
+}

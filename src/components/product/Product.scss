@@ -1,0 +1,41 @@
+.tabs-box {
+    img{
+        width: 100%;
+    }
+    .tabs-box-title {
+      h1 {
+        color: #EF7C00;
+        text-align: center;
+        padding: 100px 0px 50px;
+      }
+    }
+    .react-tabs {
+      text-align: center;
+    }
+    button {
+        background-color: #e9e4de;
+      padding: 15px 25px;
+      border-radius: 61px;
+      border: 1px solid rgba(0, 16, 61, 0.12);
+     
+      &:hover{
+        background-color: #EF7C00;
+        color: white;
+      }
+    }
+}
+
+.catologBtn{
+    max-width: 40%;
+    text-align: center;
+   margin: 50px auto;
+   padding: 10px ;
+   border: 1px solid #ef7b0092;
+   border-radius: 5px ;
+    color:#EF7C00;
+    &:hover{
+        color: white;
+        background-color: #EF7C00
+        
+    }
+};

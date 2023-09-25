@@ -1,0 +1,135 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  transition: height 0.3s ease;
+  z-index: 99;
+
+  &.shrink {
+    height: 60px;
+  }
+
+  &.open {
+    .menu-items {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  a:hover {
+    
+    color: #ef7c00 !important;
+  }
+
+  // drop down----------------
+
+  .dropdown {
+    position: relative;
+
+    &:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #ffffff;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+
+      a {
+        display: block;
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 1174px;
+    margin: 0 auto;
+  }
+
+  .menu-icon {
+    display: none; // Hide the menu icon by default for larger screens
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+
+      .menu-icon-bar {
+        height: 2px;
+        width: 20px;
+        background-color: #000000;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .menu-items {
+    display: flex;
+    @media (max-width: 768px) {
+      display: none; // Hide the menu items by default for smaller screens
+      flex-direction: column;
+      padding: 20px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      left: 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000000;
+
+      @media (max-width: 768px) {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+// darknes---------
+
+.icon {
+  font-size: 20px;
+}
+
+.sun {
+  padding: 3px;
+  background: #b2b2b2af;
+  color: yellow;
+  border-radius: 5px;
+}
+
+.moon {
+  padding: 2px 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.dark-mode-button {
+  border: none;
+}

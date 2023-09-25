@@ -1,0 +1,61 @@
+#home {
+  padding-top: 80px;
+}
+
+.carousel-bgc {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../../assets/images/for-carousel-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+.carousel-bgc .slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+.carousel-bgc .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.carousel-bgc .slick-dots li button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.carousel-bgc .slick-dots li.slick-active button {
+  background-color: #ef7c00;
+}
+.carousel-bgc .carousel-main1 {
+  padding: 150px 0px 150px;
+}
+.carousel-bgc .carousel-main1 .carousel-main1-left h1 {
+  color: #2c2d2e;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  padding: 10px 0px 10px;
+}
+.carousel-bgc .carousel-main1 .carousel-main1-left p {
+  color: #2c2d2e;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 0px 10px;
+}
+.carousel-bgc .carousel-main1 .carousel-main1-left button {
+  padding: 15px 25px;
+  border-radius: 4px;
+  background: #ef7c00;
+  border: none;
+  margin: 10px 0px 10px;
+  transition: 0.4s;
+}
+.carousel-bgc .carousel-main1 .carousel-main1-left button:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}

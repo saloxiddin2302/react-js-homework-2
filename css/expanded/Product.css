@@ -1,0 +1,35 @@
+.tabs-box img {
+  width: 100%;
+}
+.tabs-box .tabs-box-title h1 {
+  color: #EF7C00;
+  text-align: center;
+  padding: 100px 0px 50px;
+}
+.tabs-box .react-tabs {
+  text-align: center;
+}
+.tabs-box button {
+  background-color: #e9e4de;
+  padding: 15px 25px;
+  border-radius: 61px;
+  border: 1px solid rgba(0, 16, 61, 0.12);
+}
+.tabs-box button:hover {
+  background-color: #EF7C00;
+  color: white;
+}
+
+.catologBtn {
+  max-width: 40%;
+  text-align: center;
+  margin: 50px auto;
+  padding: 10px;
+  border: 1px solid rgba(239, 123, 0, 0.5725490196);
+  border-radius: 5px;
+  color: #EF7C00;
+}
+.catologBtn:hover {
+  color: white;
+  background-color: #EF7C00;
+}
